@@ -19,19 +19,28 @@
   .hero{
     background: var(--green);
     color: white;
-    padding: 48px 16px 56px;
+  
+    min-height: 60vh;        /* height of green background */
+    display: flex;
+    align-items: center;     /* vertical center */
+    justify-content: center; /* horizontal center */
+  
     text-align: center;
+    padding: 0 16px;
   }
+  
   .hero-inner{
     max-width: 900px;
     margin: 0 auto;
   }
-  .hero-logo{
-    width: 120px;
-    height: auto;
-    margin: 0 auto 16px;
-    display: block;
-  }
+
+.hero-logo {
+  width: 110px;
+  height: auto;
+  display: block;
+  margin: 0 auto 16px;
+  max-width: 70vw;
+}
   .hero-title{
     margin: 0;
     font-size: clamp(32px, 4vw, 48px);
@@ -74,9 +83,11 @@
   
   /* Lists & text */
   .list{
+    list-style: none;
     margin: 0;
-    padding-left: 18px;
+    padding: 0;
   }
+  
   .list li{
     margin: 8px 0;
   }
@@ -103,12 +114,4 @@
     text-align: center;
     padding: 18px;
     font-size: 14px;
-  }
-
-  .hero-logo {
-    width: 140px;
-    height: auto;
-    display: block;
-    margin: 0 auto 16px;
-    max-width: 70vw;
-  }
+}
