@@ -1,39 +1,114 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f6f8;
+:root{
+    --green: #0b5f4d;
+    --accent: #f4b400;
+    --text: #1b1b1b;
+    --muted: #6b6b6b;
+    --bg: #ffffff;
+  }
+  
+  *{ box-sizing: border-box; }
+  body{
     margin: 0;
-    padding: 0;
-}
-
-.container {
-    max-width: 600px;
-    margin: 60px auto;
-    background-color: white;
-    padding: 30px;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.5;
+  }
+  
+  /* HERO */
+  .hero{
+    background: var(--green);
+    color: white;
+    padding: 48px 16px 56px;
     text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.profile-pic {
-    width: 200px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-.bio {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 25px;
-}
-
-.links a {
-    margin: 0 10px;
+  }
+  .hero-inner{
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .hero-logo{
+    width: 120px;
+    height: auto;
+    margin: 0 auto 16px;
+    display: block;
+  }
+  .hero-title{
+    margin: 0;
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 800;
+    letter-spacing: 0.2px;
+  }
+  .hero-subtitle{
+    margin: 6px 0 10px;
+    font-size: 14px;
+    opacity: 0.95;
+  }
+  .hero-meta{
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.95;
+  }
+  
+  /* CONTENT */
+  .container{
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 36px 18px 48px;
+  }
+  .section{
+    margin: 0 0 36px;
+  }
+  .section-title{
+    margin: 0;
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--green);
+  }
+  .divider{
+    height: 2px;
+    background: var(--accent);
+    width: 100%;
+    margin: 10px 0 16px;
+    border-radius: 2px;
+  }
+  
+  /* Lists & text */
+  .list{
+    margin: 0;
+    padding-left: 18px;
+  }
+  .list li{
+    margin: 8px 0;
+  }
+  a{
+    color: var(--green);
     text-decoration: none;
-    color: #0077cc;
-    font-weight: bold;
-}
-
-.links a:hover {
+  }
+  a:hover{
     text-decoration: underline;
-}
+  }
+  .edu-line{
+    margin: 6px 0;
+  }
+  .text{
+    margin: 0;
+    color: var(--text);
+    max-width: 80ch;
+  }
+  
+  /* FOOTER */
+  .footer{
+    background: var(--green);
+    color: white;
+    text-align: center;
+    padding: 18px;
+    font-size: 14px;
+  }
+
+  .hero-logo {
+    width: 140px;
+    height: auto;
+    display: block;
+    margin: 0 auto 16px;
+    max-width: 70vw;
+  }
